@@ -1,0 +1,15 @@
+load("@rules_python//python:packaging.bzl", "py_wheel")
+
+py_library(
+    name = "py",
+    srcs = ["foo.py"],
+)
+
+py_wheel(
+    name = "wheel",
+    distribution = "test-wheel",
+    python_tag = "py3",
+    stamp = 1,
+    version = "0.0.1-{BUILD_TIMESTAMP}",
+    deps = [":py"],
+)
