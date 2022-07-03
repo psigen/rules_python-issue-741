@@ -19,7 +19,7 @@ INFO: Build completed successfully, 7 total actions
 Note the output file is named `test_wheel-0.0.1_BUILD_TIMESTAMP_-py3-none-any.whl`
 instead of rendering the stamp value of `BUILD_TIMESTAMP`.
 
-However, if the `.whl` file is opened, it containS the expected name of e.g.
+However, if the `.whl` file is opened, it contains the expected name of e.g.
 `test_wheel-0.0.1_1656829011.dist-info` for the `dist-info` directory.
 
 In addition, `bazel-bin/wheel.name` contains the correctly rendered name, e.g.
